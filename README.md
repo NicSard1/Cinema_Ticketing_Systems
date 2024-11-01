@@ -89,22 +89,53 @@ The project is organized into several packages that adhere to the MVC architectu
 To provide a visual understanding of the application, below are screenshots of key interfaces:
 
 1. **Employee Login Screen**  
+   ![Employee Login Screen](screenshots/employee_login.png)
+
 2. **New Employee Registration**  
+   ![New Employee Registration](screenshots/new_employee.png)
+
 3. **Delete Employee Screen**  
+   ![Delete Employee Screen](screenshots/delete_employee.png)
+
 4. **Employee View 1**  
+   ![Employee View 1](screenshots/employee_view1.png)
+
 5. **Employee View 2**  
+   ![Employee View 2](screenshots/employee_view2.png)
+
 6. **Employee View 3**  
+   ![Employee View 3](screenshots/employee_view3.png)
+
 7. **Employee View 4**  
+   ![Employee View 4](screenshots/employee_view4.png)
+
 8. **Employee Home After Deleting All Purchases**  
+   ![Employee Home After Deleting All Purchases](screenshots/employee_home_after_deleted_all_purchase.png)
+
 9. **Employee Home**  
+   ![Employee Home](screenshots/employee_home.png)
+
 10. **Purchase History**  
+    ![Purchase History](screenshots/purchase_history.png)
+
 11. **Purchase Succeeded**  
+    ![Purchase Succeeded](screenshots/purchase_succeeded.png)
+
 12. **Payment Failed**  
+    ![Payment Failed](screenshots/payment_failed.png)
+
 13. **View Basket**  
+    ![View Basket](screenshots/basket_book_now1.png)
+
 14. **Book a Ticket**  
+    ![Book a Ticket](screenshots/sonic_book_ticket1.png)
+
 15. **Search Movie**  
+    ![Search Movie](screenshots/movie_filter1.png)
+
 16. **Member Information**  
-17. **Home Screen**
+    ![Member Information](screenshots/member_infomartions.png)
+
 
 ### Contact
 
