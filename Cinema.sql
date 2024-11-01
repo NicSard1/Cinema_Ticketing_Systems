@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : lun. 27 juin 2022 à 15:50
--- Version du serveur :  5.7.34
--- Version de PHP : 7.4.21
+-- Généré le : ven. 01 nov. 2024 à 17:56
+-- Version du serveur : 5.7.39
+-- Version de PHP : 7.4.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,16 +39,6 @@ CREATE TABLE `customer` (
   `loyalty_points` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Déchargement des données de la table `customer`
---
-
-INSERT INTO `customer` (`Name`, `Surname`, `Age`, `email`, `idCustomer`, `discount`, `password`, `payment_infos`, `loyalty_points`) VALUES
-('diane', 'Chan Ky To', 20, 'diane@gmail.com', 5, 0.035, 'password', 5555, 35),
-('Theo', 'Claudel', 21, 'theo.claudel@edu.ece.fr', 6, 0, 'theo', 1234, 0),
-('Aurelien', 'bretecher', 22, 'bretecheraurelien@iclooud.com', 7, 0.022, 'aurelien', 1106, 22),
-('Adrien', 'Galloiss', 20, 'adriengallois@outlook.com', 8, 0, 'adrien', 325246, 0);
-
 -- --------------------------------------------------------
 
 --
@@ -68,12 +58,10 @@ CREATE TABLE `employee` (
 --
 
 INSERT INTO `employee` (`Name`, `Surname`, `Age`, `idEmployee`, `Password`) VALUES
-('Diane', 'Chan Ky To', 20, 24, 'password'),
 ('Tom', 'Hanks', 65, 25, 'forest'),
 ('Tom', 'Cruise', 59, 26, 'missionIMPOSSIBLE'),
 ('Tom', 'Holland', 26, 27, 'spiderman'),
-('Tom', 'Hardy', 44, 28, 'venom'),
-('Sandric', 'Bretecher', 21, 29, 'Sandre29.');
+('Tom', 'Hardy', 44, 28, 'venom');
 
 -- --------------------------------------------------------
 
@@ -170,15 +158,6 @@ CREATE TABLE `purchase` (
   `total_price` double NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Déchargement des données de la table `purchase`
---
-
-INSERT INTO `purchase` (`purchaseId`, `customerId`, `total_price`) VALUES
-(41, 5, 40.940000000000005),
-(40, 0, 21.97),
-(39, 7, 25.96);
-
 -- --------------------------------------------------------
 
 --
@@ -192,25 +171,6 @@ CREATE TABLE `ticket` (
   `purchaseId` int(11) DEFAULT NULL,
   `price` double DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Déchargement des données de la table `ticket`
---
-
-INSERT INTO `ticket` (`idTicket`, `idCustomer`, `idMovie`, `purchaseId`, `price`) VALUES
-(171, 5, 137, 41, 6.99),
-(170, 5, 137, 41, 7.99),
-(169, 5, 137, 41, 7.99),
-(168, 5, 137, 41, 5.99),
-(167, 5, 137, 41, 5.99),
-(166, 5, 137, 41, 5.99),
-(165, 0, 134, 40, 6.99),
-(164, 0, 134, 40, 6.99),
-(163, 0, 134, 40, 7.99),
-(162, 7, 1, 39, 7.99),
-(161, 7, 1, 39, 5.99),
-(160, 7, 1, 39, 5.99),
-(159, 7, 1, 39, 5.99);
 
 --
 -- Index pour les tables déchargées
@@ -265,7 +225,7 @@ ALTER TABLE `ticket`
 -- AUTO_INCREMENT pour la table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `idCustomer` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `idCustomer` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT pour la table `employee`
@@ -289,13 +249,13 @@ ALTER TABLE `movieshow`
 -- AUTO_INCREMENT pour la table `purchase`
 --
 ALTER TABLE `purchase`
-  MODIFY `purchaseId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `purchaseId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT pour la table `ticket`
 --
 ALTER TABLE `ticket`
-  MODIFY `idTicket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=172;
+  MODIFY `idTicket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=187;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
