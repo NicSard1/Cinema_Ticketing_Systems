@@ -108,4 +108,4 @@ To provide a visual understanding of the application, below are screenshots of k
 
 ### Contact
 
-If you have any questions or suggestions, please feel free to reach out to me on [LinkedIn]((https://www.linkedin.com/in/sandric-b-763a65197/)).
+If you have any questions or suggestions, please feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/sandric-b-763a65197/).
