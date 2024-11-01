@@ -2,6 +2,10 @@
 
 ## Detailed README
 
+**Authors**: Diane CHAN KY TO ; Sandric BRETECHER (myself)
+
+**Date**: 27/06/2022
+
 ### Project Overview
 
 The Cinema Ticketing System is a Java-based application developed as part of my academic exchange program in London. The application serves as a complete management system for a cinema, offering functionalities for both customers and administrators. This includes ticket purchasing, user account management, employee management, and statistics analysis. The system is built using the Model-View-Controller (MVC) design pattern to provide a modular and scalable solution. It features a Java Swing-based graphical user interface (GUI) and integrates with a SQL database for dynamic data storage and management.
